@@ -3,11 +3,122 @@
 <html lang="fr">
 
     <head>
-        <title>OhMyFood</title>
+        <title>ohmyfood - Accueil</title>
         <meta charset="UTF-8" />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
         <script src="https://kit.fontawesome.com/347bd8b70b.js" crossorigin="anonymous"></script>
     </head>
+
+    <body>
+        <header class="header">
+            <h1 class="header__logo">
+                ohmyfood
+            </h1>
+        </header>
+        <section class="location">
+            <i class="location__icon fas fa-map-marker-alt"></i>
+            <p class="location__spot">Paris, Belleville</p>
+        </section>
+        <section class="presentation">
+            <h2 class="presentation__title">
+                Réservez le menu qui vous convient
+            </h2>
+            <p class="presentation__txt">
+                Découvrez des restaurants d'exception, sélectionnés par nos soins.
+            </p>
+            <input type="submit" value="Explorer nos restaurants" class="btn" /> 
+        </section>
+        <section class="helper">
+            <h2>
+                Fonctionnement
+            </h2>
+            <div class="box">
+                <p class="box_numbers">1</p>
+                <i class="box__icons"></i>
+                <p class="box__txt">Choisissez un restaurant</p>
+            </div>
+            <div class="box">
+                <p class="box__numbers">2</p>
+                <i class="box__icons"></i>
+                <p class="box__txt">Composez votre menu</p>
+            </div>
+            <div class="box">
+                <p class="box__numbers">3</p>
+                <i class="box__icons"></i>
+                <p class="box__txt">Dégustez au restaurant</p>
+            </div>
+        </section>
+        <section class="restaurants">
+            <h2>
+                Restaurants
+            </h2>
+            <div class="cards">
+                <img src="images/la-palette-du-goût.jpg" alt="La palette du goût" />
+                <div class="cards__news">
+                    Nouveau
+                </div>
+                <h3 class="cards__titles">
+                    La palette du goût
+                </h3>
+                <p>
+                    Ménilmontant
+                </p>
+            </div>
+            <div class="cards">
+                <img src="images/la-note-enchantée.jpg" alt="La note enchantée" />
+                <div class="cards__news">
+                    Nouveau
+                </div>
+                <h3 class="cards__titles">
+                    La note enchantée
+                </h3>
+                <p>
+                    Charonne
+                </p>
+            </div>
+            <div class="cards">
+                <img src="images/à-la-française.jpg" alt="À la française" />
+                <h3 class="cards__titles">
+                    À la française
+                </h3>
+                <p>
+                    Cité Rouge
+                </p>
+            </div>
+            <div class="cards">
+                <img src="images/le-délice-des-sens.jpg" alt="Le délice des sens" />
+                <h3 class="cards__titles">
+                    Le délice des sens
+                </h3>
+                <p>
+                   Folie-Méricourt 
+                </p>
+            </div>
+        </section>
+        <footer class="footer">
+            <h1 class="footer__logo">
+                ohmyfood
+            </h1>
+            <ul>
+                <li>
+                    <i></i>
+                    Proposer un restaurant
+                </li>
+                <li>
+                    <i></i>
+                    Devenir partenaire
+                </li>
+                <li>
+                    Mentions légales
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+        </footer>
+    </body>
