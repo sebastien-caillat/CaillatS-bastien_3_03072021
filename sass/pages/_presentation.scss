@@ -1,0 +1,13 @@
+.presentation {
+    padding: 30px 0px 50px 0px;
+    text-align: center;
+    background-color: #F2F2F2;
+    &__title {
+        font-weight: bold;
+        position: relative;
+        right: 10px;
+    }
+    &__txt {
+        padding-bottom: 10px;
+    }
+}

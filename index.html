@@ -6,7 +6,7 @@
         <title>ohmyfood - Accueil</title>
         <meta charset="UTF-8" />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
     </head>
 
     <body>
+    <div class="container">
         <header class="header">
             <h1 class="logo">
                 ohmyfood
@@ -26,19 +27,19 @@
         </section>
         <section class="presentation">
             <h2 class="presentation__title">
-                Réservez le menu qui vous convient
+                Réservez le menu qui<br>vous convient
             </h2>
             <p class="presentation__txt">
                 Découvrez des restaurants d'exception, sélectionnés par nos soins.
             </p>
-            <input type="submit" value="Explorer nos restaurants" class="btn" /> 
+            <button class="btn" type="button">Explorer nos restaurants</button>
         </section>
         <section class="helper">
             <h2>
                 Fonctionnement
             </h2>
             <div class="box">
-                <p class="box_numbers">1</p>
+                <p class="box__numbers">1</p>
                 <i class="box__icons fas fa-mobile-alt"></i>
                 <p class="box__txt">Choisissez un restaurant</p>
             </div>
@@ -125,4 +126,5 @@
                 </li>
             </ul>
         </footer>
+    </div>
     </body>

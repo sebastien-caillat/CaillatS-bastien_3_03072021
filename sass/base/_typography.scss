@@ -1,0 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-family: 'Shrikhand', sans-serif;
+    &--small {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 1.3em;
+    }
+}

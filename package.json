@@ -1,0 +1,19 @@
+{
+  "name": "caillatsebastien_3_03072021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastien-caillat/CaillatSebastien_3_03072021.git"
+  },
+  "author": "Sébastien Caillat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastien-caillat/CaillatSebastien_3_03072021/issues"
+  },
+  "homepage": "https://github.com/sebastien-caillat/CaillatSebastien_3_03072021#readme"
+}

@@ -1,0 +1,23 @@
+.box {
+    @include box;
+    &__icons {
+        position: relative;
+        padding-top: 25px;
+        right: 45px;
+        color: #808080;
+    }
+    &__numbers {
+        position: relative;
+        right: 15px;
+        border: 1px solid $colour-primary;
+        border-radius: 30px;
+        padding: 5px 10px 5px 10px;
+        color: #FFFFFF;
+        background-color: $colour-primary;
+    }
+    &__txt {
+        position: relative;
+        right: 70px;
+        top: 7px;
+    }
+}
