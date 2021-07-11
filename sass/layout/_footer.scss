@@ -4,5 +4,18 @@
      padding: 10px;
      ul {
           list-style-type: none;
+          display: inline-flex;
+          flex-direction: column;
+          margin: 3px;
+     }
+     a {
+          text-decoration: none;
+          color: #FFFFFF;
+     }
+}
+
+.logo {
+     &--small {
+          padding-left: 15px;
      }
 }
