@@ -9,3 +9,12 @@
     box-shadow: 1px 5px 10px rgba(0,0,0,.2);
     font-weight: bold;
 }
+
+@mixin button {
+    color: #FFFFFF;
+    font-weight: bold;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    padding: 18px;
+    border-radius: 40px;
+    border: none;
+}

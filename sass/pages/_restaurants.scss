@@ -14,18 +14,39 @@
         border-top-right-radius: 20px;
         z-index: 2;
     }
+    &__txtarea {
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+        position: relative;
+        top: 30px;
+    }
     &__news {
         color: #2E8B57;
         font-weight: bold;
         border: 1px solid $colour-tertiary;
-        border-radius: 5px;
+        border-radius: 3px;
         background-color: $colour-tertiary;
         width: 25%;
         padding: 7px 0px 7px 10px;
+        margin-right: 7px;
         z-index: 1;
-        display: block;
-        float: right;    
-        // position: relative;
-        // bottom: 100%;
+        float: right;
+        position: relative;
+        bottom: 150px;
     }
+    &__titles {
+        padding-left: 20px;
+    }
+    &__icons {
+        align-self: flex-end;
+        position: relative;
+        bottom: 62px;
+        left: 70px;
+    }
+    p {
+        padding-left: 20px;
+        margin-top: -10px;
+    }
+
 }
