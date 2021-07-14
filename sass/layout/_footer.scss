@@ -2,12 +2,23 @@
      background-color: #353535;
      color: #FFFFFF;
      padding: 10px;
+     &__icons {
+          margin-right: 5px;
+     }
+
      ul {
           list-style-type: none;
           display: inline-flex;
           flex-direction: column;
      }
-     
+
+     li {
+          padding: 5px;
+          position: relative;
+          right: 25px;
+          bottom: 10px;
+     }
+
      a {
           text-decoration: none;
           color: #FFFFFF;
@@ -18,4 +29,8 @@
      &--small {
           padding-left: 15px;
      }
+}
+
+.fa-utensils {
+     margin-right: 12px;
 }
