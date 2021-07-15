@@ -7,14 +7,13 @@
 @import "./base/typography";
 
 @import "./components/buttons";
-@import "./components/box";
 
 @import "./layout/header";
-
-
+@import "./layout/menu";
 @import "./layout/footer";
 
 
 @import "./pages/location";
+@import "./pages/helper";
 @import "./pages/presentation";
 @import "./pages/restaurants";
