@@ -8,7 +8,7 @@
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 20px;
-    box-shadow: 1px 5px 10px rgba(0,0,0,.2);
+    box-shadow: $border-shadow;
     img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -36,7 +36,8 @@
         bottom: 150px;
     }
     &__titles {
-        padding-left: 20px;
+        padding-left: 15px;
+        padding-top: 10px;
     }
 
     &__icons {
@@ -51,10 +52,8 @@
         bottom: 62px;
         left: 70px;
     }
-
     p {
-        padding-left: 20px;
+        padding-left: 15px;
         margin-top: -10px;
     }
-
 }
