@@ -11,6 +11,11 @@
     z-index: 1;
     position: relative;
     bottom: 50px;
+    margin-bottom: -50px;
+    button {
+        padding: 20px 60px 20px 60px;
+        margin: 50px 90px;
+    }
     &__heading {
         display: flex;
         align-items: baseline;
@@ -20,7 +25,7 @@
     }
     &__categories {
         text-transform: uppercase;
-        margin: 20px;
+        margin: 30px 20px 20px 20px;
     }
     &__underline {
         width: 10%;
@@ -29,14 +34,30 @@
         bottom: 10px;
         margin: 20px;
     }
+
+    .fav {
+        font-size: 25px;
+        margin-left: 15px;
+    }
 }
 
 .dishbox {
     @include box;
     display: flex;
+    justify-content: space-between;
     background-color: #FFFFFF;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     &__prices {
         align-self: flex-end;
+        font-weight: bold;
+    }
+    &__txt {
+        justify-self: right;
+        align-self: flex-end;
+    }
+    &__titles {
+        font-size: 1em;
     }
 }

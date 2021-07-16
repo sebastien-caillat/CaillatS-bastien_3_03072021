@@ -1,6 +1,8 @@
 .helpbox {
     @include box;
     display: flex;
+    font-weight: bold;
+    margin: 20px;
     &__icons {
         position: relative;
         padding-top: 25px;
@@ -21,5 +23,11 @@
     &__txt {
         position: relative;
         top: 7px;
+    }
+    &:hover {
+        background-color: rgba(147, 86, 220, 0.1);
+        i {
+            color: $colour-primary;
+        }
     }
 }
