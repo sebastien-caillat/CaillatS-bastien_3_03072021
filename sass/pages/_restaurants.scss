@@ -5,6 +5,7 @@
 }
 
 .cards {
+    width: 320px;
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 20px;
@@ -22,6 +23,7 @@
         top: 30px;
     }
     &__news {
+        width: 30px;
         color: #2E8B57;
         font-weight: bold;
         border: 1px solid $colour-tertiary;

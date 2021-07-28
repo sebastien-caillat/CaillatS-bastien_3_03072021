@@ -2,6 +2,9 @@
      background-color: #353535;
      color: #FFFFFF;
      padding: 10px;
+     @media (max-width: 768px) {
+          // padding-left: 200px;
+     }
      &__icons {
           margin-right: 5px;
      }

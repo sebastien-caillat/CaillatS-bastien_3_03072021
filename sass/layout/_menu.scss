@@ -1,6 +1,7 @@
 .visual-preview {
     &__photo {
         z-index: 2;
+        margin-top: -20px;
     }
 }
 
@@ -12,6 +13,9 @@
     position: relative;
     bottom: 50px;
     margin-bottom: -50px;
+    @media (max-width: 768px) {
+        // padding-left: 200px;
+    }
     button {
         padding: 20px 60px 20px 60px;
         margin: 50px 90px;
@@ -19,6 +23,7 @@
     &__heading {
         display: flex;
         align-items: baseline;
+        padding-top: 20px;
     }
     &__title {
         margin: 20px;
@@ -28,7 +33,7 @@
         margin: 30px 20px 20px 20px;
     }
     &__underline {
-        width: 10%;
+        width: 38px;
         border: 2px solid $colour-tertiary;
         position: relative;
         bottom: 10px;
@@ -43,21 +48,28 @@
 
 .dishbox {
     @include box;
-    display: flex;
-    justify-content: space-between;
+    width: 90%;
     background-color: #FFFFFF;
-    flex-wrap: nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow:ellipsis;
+    padding-left: 15px;
+    &__sub {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -25px;
+        margin-bottom: -10px;
+    }
     &__prices {
-        align-self: flex-end;
+        position: relative;
         font-weight: bold;
     }
-    &__txt {
-        justify-self: right;
-        align-self: flex-end;
-    }
     &__titles {
+        font-size: 1.1em;
+    }
+    &__txt {
+        overflow: hidden;
+        text-overflow:ellipsis;
         font-size: 1em;
     }
 }
