@@ -1,8 +1,25 @@
+.helper {
+    h2 {
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: center; 
+            position: relative;
+            right: 10px;
+        }
+    }
+}
+
 .helpbox {
     @include box;
     display: flex;
     font-weight: bold;
     margin: 20px;
+    @media (min-width: 768px) {
+        display: inline-flex;    
+    }
+    @media (min-width: 992px) {
+        margin: 20px 152px 0px 152px;   
+    }
     &__icons {
         position: relative;
         padding-top: 25px;
