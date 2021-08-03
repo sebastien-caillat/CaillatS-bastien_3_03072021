@@ -1,0 +1,38 @@
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  content: "";
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f2f2f2;
+    border-top-color: $colour-primary;
+    border-bottom-color: $colour-primary;
+    border-left-color: $colour-secondary;
+    border-right-color: $colour-secondary;
+    border-radius: 50%;
+    animation: loading 1000ms 150ms ease infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  animation: container 0ms 1150ms;
+}
+
+@keyframes container {
+  0% {
+    transform: translateX(-9999px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

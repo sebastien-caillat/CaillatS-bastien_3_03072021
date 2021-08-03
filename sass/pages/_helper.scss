@@ -18,7 +18,8 @@
         display: inline-flex;    
     }
     @media (min-width: 992px) {
-        margin: 20px 152px 0px 152px;   
+        position: relative;
+        left: 15%;
     }
     &__icons {
         position: relative;
