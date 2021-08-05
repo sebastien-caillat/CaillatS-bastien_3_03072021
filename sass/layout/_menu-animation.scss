@@ -1,0 +1,27 @@
+.dishbox {
+    animation: menu-apparition 1000ms ease-in-out;
+    @for $i from 1 to $num-menu {
+        &--#{$i} {
+            animation-delay: $anim-delay*$i;
+        }
+    }
+}
+
+@keyframes menu-apparition {
+    0% {
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

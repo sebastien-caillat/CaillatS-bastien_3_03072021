@@ -1,7 +1,8 @@
 .loading-spinner {
-  display: flex;
-  justify-content: center;
-  content: "";
+    display: flex;
+    justify-content: center;
+    &::after {
+    content: "";
     width: 50px;
     height: 50px;
     border: 10px solid #f2f2f2;
@@ -11,6 +12,7 @@
     border-right-color: $colour-secondary;
     border-radius: 50%;
     animation: loading 1000ms 150ms ease infinite;
+    }
 }
 
 @keyframes loading {
@@ -24,7 +26,7 @@
 }
 
 .container {
-  animation: container 0ms 1150ms;
+  animation: container 0ms 2150ms both;
 }
 
 @keyframes container {

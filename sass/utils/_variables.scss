@@ -4,3 +4,9 @@ $colour-tertiary: #99E2D0;
 
 $border-shadow: 1px 5px 10px rgba(0,0,0,.2);
 $background: #F2F2F2;
+
+@use "sass:math";
+
+$anim-dur: 1000ms;
+$num-menu: 10;
+$anim-delay: math.div($anim-dur, $num-menu);
