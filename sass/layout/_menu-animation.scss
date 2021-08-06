@@ -1,25 +1,47 @@
 .dishbox {
-    animation: menu-apparition 1000ms ease-in-out;
-    @for $i from 1 to $num-menu {
-        &--#{$i} {
-            animation-delay: $anim-delay*$i;
-        }
+    animation: menu-apparition 3000ms ease-in-out forwards;
+    opacity: 0;
+    &:nth-child(1) {
+        animation-delay: 300ms;
     }
+    &:nth-child(2) {
+        animation-delay: 600ms;
+    }
+    &:nth-child(3) {
+        animation-delay: 900ms;
+    }
+    &:nth-child(4) {
+        animation-delay: 1200ms;
+    }
+    &:nth-child(5) {
+        animation-delay: 1500ms;
+    }
+    &:nth-child(6) {
+        animation-delay: 1800ms;
+    }
+    &:nth-child(7) {
+        animation-delay: 2100ms;
+    }
+    &:nth-child(8) {
+        animation-delay: 2400ms;
+    }
+    &:nth-child(9) {
+        animation-delay: 2700ms;
+    }
+    &:nth-child(10) {
+        animation-delay: 3000ms;
+    }
+    // @for $i from 1 to $num-menu {
+    //     &--#{$i} {
+    //         animation-delay: $anim-delay*$i;
+    //     }
 }
 
 @keyframes menu-apparition {
-    0% {
-        transform-origin: top;
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 0.3;
-    }
-
-    75% {
-        opacity: 0.75;
-    }
+    // 0% {
+    //     transform-origin: top;
+    //     opacity: 0;
+    // }
 
     100% {
         opacity: 1;
