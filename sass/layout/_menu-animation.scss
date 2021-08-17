@@ -1,20 +1,24 @@
 .menu__starters {
-    animation: menu-apparition 2000ms ease-in-out forwards;
+    animation: menu-apparition 1000ms ease-in-out forwards;
     opacity: 0;
 }
 
 .menu__dishes {
-    animation: menu-apparition 2000ms 1000ms ease-in-out forwards;
+    animation: menu-apparition 1000ms 500ms ease-in-out forwards;
     opacity: 0;
 }
 
 .menu__desserts {
-    animation: menu-apparition 3000ms 2000ms ease-in-out forwards;
+    animation: menu-apparition 1000ms 1000ms ease-in-out forwards;
     opacity: 0;
 }
 
 @keyframes menu-apparition {
+    0% {
+        transform: translateY(-20px);
+    }
     100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
