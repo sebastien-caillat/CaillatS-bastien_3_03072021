@@ -106,6 +106,7 @@
         right: 10%;
         top: 3%;
         cursor: pointer;
+        object-fit: cover;
         &:hover {
             animation: opacity 1000ms 250ms both ease;
         }
