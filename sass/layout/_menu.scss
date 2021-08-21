@@ -43,6 +43,9 @@
             justify-content: center;
             padding-left: 22%;
         }
+        @media (min-width: 992px) {
+            padding-left: 38%;
+        }
     }
     &__title {
         margin: 20px;
@@ -125,6 +128,9 @@
                 right: 25%;
                 top: 3.5%;
             }
+        }
+        @media (min-width: 992px) {
+            padding-right: 14%;
         }
     }
 }
