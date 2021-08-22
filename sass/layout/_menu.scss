@@ -79,36 +79,33 @@
         }
     }
 
-    @keyframes filling {
-        0% {
-            opacity: 0;
-        }
-    
-        100% {
-            opacity: 1;
-        }
-      }
-
-    @keyframes opacity {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0;
+.fav {
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    z-index: 3;
+    &__fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    &:hover {
+    animation: filling 400ms 0ms both ease;
         }
     }
-
-    .fav {
+    &__heart {
         width: 30px;
         height: 30px;
         position: absolute;
         right: 10%;
         top: 3%;
         cursor: pointer;
-        object-fit: cover;
+        z-index: 1;
         &:hover {
-            animation: opacity 1000ms 250ms both ease;
+            transition: opacity 200ms 150ms;
+            opacity: 0;
         }
         &--full {
             width: 30px;
@@ -117,10 +114,7 @@
             right: 10%;
             top: 3%;
             cursor: pointer;
-            opacity: 0;
-            &:hover {
-                animation: filling 1000ms both ease;
-            }
+            z-index: -1;
         }
         @media (min-width: 768px) {
             right: 25%;
@@ -133,6 +127,25 @@
         @media (min-width: 992px) {
             padding-right: 14%;
         }
+    }
+}
+
+@keyframes filling {
+    0% {
+        transform: translateY(0) rotate(0deg);
+
+    }
+
+    33% {
+        transform: translateY(-17px) rotate(-5deg);
+    }
+
+    66% {
+        transform: translateY(-34px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(-50px) rotate(0deg);
     }
 }
 
@@ -199,4 +212,5 @@
     100% {
         transform: rotate(360deg);
     }
+}
 }
