@@ -17,6 +17,7 @@
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 20px;
+    padding-bottom: 30px;
     box-shadow: $border-shadow;
     @media (min-width: 768px) {
         display: inline-block;   
@@ -26,7 +27,7 @@
         position: relative;
         left: 7%;     
     }
-    img {
+    &__img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         z-index: 2;
@@ -57,20 +58,36 @@
         padding-left: 15px;
         padding-top: 10px;
     }
-
     &__icons {
-        font-size: 25px;
+        width: 30px;
+        height: 30px;
         align-self: flex-end;
-        position: relative;
-        bottom: 62px;
-        right: 25px;
+        position: absolute;
+        &--empty {
+            z-index: 10;
+            background-color: #FFFFFF;
+            &:hover {
+            transition: opacity 550ms 150ms;
+            opacity: 0;
+            }
+        }
     }
     &__icons--news {
-        font-size: 25px;
+        width: 30px;
+        height: 30px;
         align-self: flex-end;
-        position: relative;
-        bottom: 62px;
-        left: 70px;
+        position: absolute;
+        bottom: 0;
+        right: -280%;
+        top: 100%;
+    }
+    &__icons--normal {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 50%;
+        top: 100%;
+
     }
     p {
         padding-left: 15px;
