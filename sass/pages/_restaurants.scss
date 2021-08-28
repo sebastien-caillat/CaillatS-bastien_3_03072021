@@ -67,8 +67,7 @@
             z-index: 10;
             background-color: #FFFFFF;
             &:hover {
-            transition: opacity 550ms 150ms;
-            opacity: 0;
+                animation: heart-opacity 550ms 150ms forwards;
             }
         }
     }
@@ -92,5 +91,11 @@
     p {
         padding-left: 15px;
         margin-top: -10px;
+    }
+}
+
+@keyframes heart-opacity {
+    to {
+        opacity: 0;
     }
 }
