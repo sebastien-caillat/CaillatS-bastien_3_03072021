@@ -145,6 +145,14 @@
         width: 20%;
         left: 39%;
     }
+    &:hover {
+        .dishbox__check-icon {
+            animation: rotation 1250ms ease-in-out;
+        }
+        .dishbox_checkbox {
+            // animation: slide-in 2000ms ease-in-out forwards;
+        }
+    }
     &__sub {
         display: flex;
         justify-content: space-between;
@@ -152,8 +160,10 @@
         margin-bottom: -10px;
     }
     &__prices {
-        position: relative;
+        position: absolute;
         font-weight: bold;
+        right: 3%;
+        z-index: 300;
     }
     &__titles {
         font-size: 1.1em;
@@ -164,21 +174,20 @@
         font-size: 1em;
     }
     &__checkbox {
-        display: block;
+        width: 8%;
         background-color: $colour-tertiary;
+        overflow: hidden;
         position: absolute;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         padding: 27px;
         top: 0;
         right: 0;
+        animation: slide-out 0ms ease-in-out forwards;
     }
     &__check-icon {
         color: #FFFFFF;
         font-size: 30px;
-        &:active {
-            animation: rotation 1250ms ease-in-out;
-        }
     }
 }
 
@@ -192,14 +201,20 @@
     }
 }
 
-@keyframes filling {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-
-    100% {
-        transform: translateY(-50px) rotate(0deg);
+@keyframes slide-out {
+    to {
+        width: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
+
+@keyframes slide-in {
+    to {
+        width: 8%;
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+  }
 
 }
