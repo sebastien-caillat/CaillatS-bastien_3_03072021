@@ -147,10 +147,11 @@
     }
     &:hover {
         .dishbox__check-icon {
-            animation: rotation 1250ms ease-in-out;
+            animation: rotation 750ms ease-in-out;
         }
-        .dishbox_checkbox {
-            // animation: slide-in 2000ms ease-in-out forwards;
+        .dishbox__checkbox {
+            transform: translateX(-8%);
+            animation: slide-in 750ms ease-in-out forwards;
         }
     }
     &__sub {
@@ -175,6 +176,7 @@
     }
     &__checkbox {
         width: 8%;
+        display: block;
         background-color: $colour-tertiary;
         overflow: hidden;
         position: absolute;
@@ -210,7 +212,11 @@
 }
 
 @keyframes slide-in {
+    from {
+        transform: translateX(50%);
+    }
     to {
+        transform: translateX(0%);
         width: 8%;
         padding-left: 27px;
         padding-right: 27px;
