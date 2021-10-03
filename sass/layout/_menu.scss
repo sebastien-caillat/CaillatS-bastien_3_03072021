@@ -191,6 +191,9 @@
     &__check-icon {
         color: #FFFFFF;
         font-size: 35px;
+        position: absolute;
+        right: 35%;
+        bottom: 30%;
     }
 }
 
@@ -210,7 +213,7 @@
     }
 
     to {
-        width: 90px;
+        width: 80px;
     }
   }
 
