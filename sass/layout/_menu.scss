@@ -156,6 +156,9 @@
         .dishbox__prices {
             animation: move 750ms ease-in-out forwards;
         }
+        .dishbox__txt {
+            animation: txt-width 750ms ease-in-out forwards;
+        }
     }
     &__sub {
         display: flex;
@@ -173,8 +176,10 @@
         font-size: 1.1em;
     }
     &__txt {
+        display: block;
         overflow: hidden;
         text-overflow:ellipsis;
+        white-space: nowrap;
         font-size: 1em;
     }
     &__checkbox {
@@ -220,6 +225,15 @@
 @keyframes move {
     to {
         transform: translateX(-300%);
+    }
+}
+
+@keyframes txt-width {
+    from {
+        max-width: 90%;
+    }
+    to {
+        max-width: 60%;
     }
 }
 
