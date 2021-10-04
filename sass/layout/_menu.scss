@@ -148,13 +148,15 @@
     &:hover {
         .dishbox__check-icon {
             width: 30px;
-            animation: rotation 750ms ease-in-out;
+            transform: rotate(360deg);
+            transition: transform 750ms ease-in-out;
         }
         .dishbox__checkbox {
             animation: slide-in 750ms ease-in-out forwards;
         }
         .dishbox__prices {
-            animation: move 750ms ease-in-out forwards;
+            transform: translateX(-300%);
+            transition: transform 750ms ease-in-out;
         }
         .dishbox__txt {
             animation: txt-width 750ms ease-in-out forwards;
@@ -171,6 +173,8 @@
         font-weight: bold;
         right: 3%;
         z-index: 300;
+        transform: translateX(0%);
+        transition: transform 750ms ease-in-out;
     }
     &__titles {
         font-size: 1.1em;
@@ -192,6 +196,7 @@
         border-bottom-right-radius: 15px;
         top: 0;
         right: 0;
+        animation: slide-out 750ms ease-in-out forwards;
     }
     &__check-icon {
         color: #FFFFFF;
@@ -199,16 +204,8 @@
         position: absolute;
         right: 35%;
         bottom: 30%;
-    }
-}
-
-@keyframes rotation {
-    0% {
         transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
+        transition: transform 750ms ease-in-out;
     }
 }
 
@@ -222,9 +219,12 @@
     }
   }
 
-@keyframes move {
+@keyframes slide-out {
+    from {
+        width: 80px;
+    }
     to {
-        transform: translateX(-300%);
+        width: 0px;
     }
 }
 
