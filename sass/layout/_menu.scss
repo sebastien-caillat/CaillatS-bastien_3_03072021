@@ -152,7 +152,8 @@
             transition: transform 750ms ease-in-out;
         }
         .dishbox__checkbox {
-            animation: slide-in 750ms ease-in-out forwards;
+            transform: translate(0px);
+            transition: transform 750ms ease-in-out;
         }
         .dishbox__prices {
             transform: translateX(-300%);
@@ -185,6 +186,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         font-size: 1.1em;
+        animation: title-width-reverse 750ms ease-in-out forwards;
     }
     &__txt {
         display: block;
@@ -193,9 +195,10 @@
         text-overflow:ellipsis;
         white-space: nowrap;
         font-size: 1em;
+        animation: txt-width-reverse 750ms ease-in-out forwards;
     }
     &__checkbox {
-        width: 0px;
+        width: 80px;
         height: 84px;
         background-color: $colour-tertiary;
         overflow: hidden;
@@ -204,7 +207,8 @@
         border-bottom-right-radius: 15px;
         top: 0;
         right: 0;
-        animation: slide-out 750ms ease-in-out forwards;
+        transform: translate(80px);
+        transition: transform 750ms ease-in-out;
     }
     &__check-icon {
         color: #FFFFFF;
@@ -219,20 +223,17 @@
 
 @keyframes slide-in {
     from {
-        width: 0px;
+        transform: translate(80px);
     }
 
     to {
-        width: 80px;
+        transform: translate(0px);
     }
   }
 
 @keyframes slide-out {
-    from {
-        width: 80px;
-    }
     to {
-        width: 0px;
+        transform: translate(80px);
     }
 }
 
@@ -245,12 +246,30 @@
     }
 }
 
+@keyframes txt-width-reverse {
+    from {
+        max-width: 60%;
+    }
+    to {
+        max-width: 90%;
+    }
+}
+
 @keyframes title-width {
     from {
         max-width: 90%;
     }
     to {
-        max-width: 70%;
+        max-width: 75%;
+    }
+}
+
+@keyframes title-width-reverse {
+    from {
+        max-width: 75%;
+    }
+    to {
+        max-width: 90%;
     }
 }
 
