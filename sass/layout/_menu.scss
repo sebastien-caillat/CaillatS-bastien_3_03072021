@@ -221,22 +221,6 @@
     }
 }
 
-@keyframes slide-in {
-    from {
-        transform: translate(80px);
-    }
-
-    to {
-        transform: translate(0px);
-    }
-  }
-
-@keyframes slide-out {
-    to {
-        transform: translate(80px);
-    }
-}
-
 @keyframes txt-width {
     from {
         max-width: 90%;
