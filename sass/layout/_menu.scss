@@ -130,6 +130,7 @@
 .dishbox {
     @include box;
     width: 90%;
+    position: relative;
     background-color: #FFFFFF;
     white-space: nowrap;
     overflow: hidden;
@@ -138,7 +139,6 @@
     cursor: pointer;
     @media (min-width: 768px) {
         width: 60%;
-        position: relative;
         left: 19%;
     }
     @media (min-width: 992px) {
@@ -161,6 +161,9 @@
         .dishbox__txt {
             animation: txt-width 750ms ease-in-out forwards;
         }
+        .dishbox__titles {
+            animation: title-width 750ms ease-in-out forwards;
+        }
     }
     &__sub {
         display: flex;
@@ -177,10 +180,15 @@
         transition: transform 750ms ease-in-out;
     }
     &__titles {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         font-size: 1.1em;
     }
     &__txt {
         display: block;
+        max-width: 90%;
         overflow: hidden;
         text-overflow:ellipsis;
         white-space: nowrap;
@@ -234,6 +242,15 @@
     }
     to {
         max-width: 60%;
+    }
+}
+
+@keyframes title-width {
+    from {
+        max-width: 90%;
+    }
+    to {
+        max-width: 70%;
     }
 }
 
